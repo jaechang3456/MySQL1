@@ -32,3 +32,19 @@ insert into 테이블명 (컬럼명, 컬럼명) values (값, 값),
 									  ... ;
                   
 ### 4. MySQL 테이블 Select하기
+#### 내가 원하는 데이터를 가져오는 방법 : select 컬럼명 from 테이블명 (원하는 테이블의 원하는 컬럼만 가져옴)
+#### * : All Columns  ex) select * from 테이블명; 
+#### , : 여러개의 컬럼 선택시 사용  ex) select 컬럼명, 컬럼명 from 테이블명;
+#### 한개의 컬럼 select 할 시에는 select name(컬럼명) from 테이블명; 처럼 작성합니다.
+#### 만약 원하는 조건을 만족하는 값을 가져오고 싶으면 where 컬럼명=값; 을 select 구문 아래 작성시, where 조건에 만족하는 값만 가져옵니다.
+
+### 5. MySQL 테이블에 데이터 update하기
+#### update 테이블명 set 컬럼명 = 값
+#### where 컬럼명 = 값 ;
+#### 위와 같이 작성시, where 조건문 값을 만족하는 컬럼들이, set뒤에 컬럼과 값으로 변환됩니다.
+
+### 6. MySQL 테이블에 데이터 delete 하기
+#### delete from 테이블명
+#### where 컬럼명 = 값;
+위와 같이 작성시, where 조건문을 만족하는 컬럼의 값을 가진 데이터는 삭제 됩니다.
+
